@@ -1,0 +1,59 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt_security
+    username: postgres
+    password: 3l
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
+#spring:
+#  datasource:
+#    url: jdbc:mariadb://localhost:3306/mydb?createIfNotExist=true
+#    username: root
+#    password:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MariaDBDialect
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.MariaDBDialect
+#  profiles:
+#    active:
+#
+#jakarta:
+#  persistence:
+#    jdbc:
+#      url: jdbc:mariadb://localhost:3306/mydb
+#      username: root
+#      password:
+#      driver-class-name: org.mariadb.jdbc.Driver
+
+
+#
+#  spring:
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://localhost:3306/mydatabase?createIfNotExist=true
+#    username: root
+#    password:
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.MariaDBDialect
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#  server:
+#    port: 8080
